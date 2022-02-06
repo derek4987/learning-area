@@ -13,7 +13,7 @@
         box-sizing: border-box;
       }
     </style>
-    <link rel="stylesheet" href="../styles.css" />
+    <!-- <link rel="stylesheet" href="../styles.css" /> -->
   </head>
 
   <body>
@@ -30,7 +30,14 @@
     const para = document.createElement('p');
 
     // Add your code here
+    
+    function chooseName() {
+      // Random int function or selector with max number excluded
+      const number = Math.floor(Math.random() * (names.length- 0) + 0);
+      return names[number];
+    }
 
+    para.textContent = chooseName();
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
